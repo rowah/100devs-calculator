@@ -30,10 +30,19 @@ body {
 header,
 footer {
 }
-section {
+.calculator {
+  width: 500px;
+  height: 600px;
+  background-color: black;
+  border-radius: 7%;
+  margin-top: 10%;
+  margin-left: 20%;
 }
-.bigBottom {
-  width: 50%;
+.button {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /******************************************
