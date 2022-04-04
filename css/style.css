@@ -22,6 +22,10 @@
 /*******************************************/
 
 body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /******************************************
@@ -31,37 +35,59 @@ header,
 footer {
 }
 .calculator {
-  width: 500px;
-  height: 600px;
+  justify-content: center;
+  height: 550px;
+  width: 400px;
   background-color: black;
   border-radius: 7%;
-  margin-top: 10%;
-  margin-left: 20%;
 }
-#buttons {
+.calc-screen {
+  width: 80%;
+  height: 80px;
+  font-size: 4rem;
+  margin-top: 15%;
+  margin-left: 2rem;
+  text-align: right;
+  color: black;
+  background-color: white;
+  padding-right: 5px;
+  border: none;
+}
+.calc-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(4, 80px);
-  margin-top: 20px;
 }
-.button {
-  width: 70px;
-  height: 70px;
+button {
+  height: 65px;
   background-color: white;
+  border: none;
   border-radius: 50%;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  margin: 10px;
-  padding-top: 20px;
+  font-size: 2rem;
+  margin: 7px;
 }
-#display {
-  width: 350px;
-  height: 180px;
-  background-color: white;
-  margin-left: 16%;
-  border-top: 50px solid black;
+#equal {
+  height: 50px;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 130px;
+  margin-right: 0px;
+}
+#clear {
+  height: 50px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+}
+button:hover {
+  background-color: grey;
+}
+#del:hover {
+  background-color: red;
 }
 
 /******************************************
