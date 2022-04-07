@@ -34,24 +34,34 @@ body {
 header,
 footer {
 }
-.calculator {
+.calculator-grid {
   justify-content: center;
   height: 550px;
   width: 400px;
   background-color: black;
   border-radius: 7%;
 }
-.calc-screen {
+.output {
+  grid-column: 1 / -1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
   width: 80%;
-  height: 80px;
-  font-size: 4rem;
+  height: 150px;
   margin-top: 15%;
-  margin-left: 2rem;
-  text-align: right;
+  margin-bottom: 3%;
+  margin-left: 2.5rem;
+  border-top: 60px solid black;
+}
+.output .previous-operand,
+.output .current-operand {
   color: black;
-  background-color: white;
-  padding-right: 5px;
-  border: none;
+  font-size: 2.5rem;
 }
 .calc-buttons {
   display: flex;
@@ -69,6 +79,7 @@ button {
   border-radius: 50%;
   font-size: 2rem;
   margin: 7px;
+  cursor: pointer;
 }
 #equal {
   height: 50px;
